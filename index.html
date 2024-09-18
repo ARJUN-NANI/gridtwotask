@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 50vw;
+            height: 70vh;
+            background-color: black;
+            display: grid;
+            padding: 20px;
+            gap: 10px;
+            grid-template-areas: 
+            'area1 area2 area3'
+            'area1 area5 area6'
+            'area4 area5  area7';}
+        .item{
+            /* height: 125px; */
+            /* width: 90px; */
+            background-color: blue;
+            border: 1px solid white;
+            padding: 20px;
+        }
+        .a1{
+            grid-area: area1;
+            background-color: aliceblue;
+            background-image: url(/images/car4.webp);
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .a2{
+            grid-area: area2;
+            background-color: aquamarine;
+            background-image: url(/images/mustang.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .a3{
+            grid-area: area3;
+            background-color: bisque;
+            background-image: url(/images/rolls\ royce.jpg);
+            background-size: contain;
+            
+        }
+        .b1{
+            grid-area: area4;
+            background-color: beige;
+            background-image: url(/images/car1.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .b2{
+            grid-area: area5;
+            background-color: bisque;
+            background-image: url(/images/car5.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .b3{
+            grid-area: area6;
+            background-color: burlywood;
+            background-image: url(/images/car2.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .b4{
+            grid-area: area7;
+            background-color: blanchedalmond;
+            background-image: url(/images/car3.webp);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item a1"></div>
+        <div class="item a2"></div>
+        <div class="item a3"></div>
+        <div class="item b1"></div>
+        <div class="item b2"></div>
+        <div class="item b3"></div>
+        <div class="item b4"></div>
+    </div>
+</body>
+</html>
